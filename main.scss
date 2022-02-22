@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+$accent: #4c82c9;
+$black: #2e2c2c;
+$white: #dddddd;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: burlywood;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: $white;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  padding: 1em 2em;
+  color: $accent;
+    p {
+      a {
+        transition: 240ms ease;
+        &:hover {
+          color: $accent;
+        }
+      }
+      &:not(:last-child) {
+        margin-right: 1.5em;
+      }
+    }
+  }
+
+
+.main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1rem;
+  .flipper {
+    background: $black;
+    padding: 1em;
+    border-radius: 7px;
+    h1 {
+      color: $white;
+      span {
+        color: burlywood;
+      }
+    }
+  }
+  button {
+    background: none;
+    border: 2px solid $black;
+    border-radius: 7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 2em;
+    padding: 0.8em 0;
+    width: 120px;
+    cursor: pointer;
+    transition: all 250ms ease;
+    &:hover {
+      background: $black;
+      color: $white;
+    }
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+}

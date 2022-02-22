@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: burlywood;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+body a {
+  text-decoration: none;
+  color: #000;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #dddddd;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  padding: 1em 2em;
+  color: #4c82c9;
+}
+
+
+.main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.main .flipper {
+  background: #2e2c2c;
+  padding: 1em;
+  border-radius: 7px;
+}
+
+.main .flipper h1 {
+  color: #dddddd;
+}
+
+.main .flipper h1 span {
+  color: burlywood;
+}
+
+.main button {
+  background: none;
+  border: 2px solid #2e2c2c;
+  border-radius: 7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2em;
+  padding: 0.8em 0;
+  width: 120px;
+  cursor: pointer;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+}
+
+.main button:hover {
+  background: #2e2c2c;
+  color: #dddddd;
+}
+
+.main button:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+/*# sourceMappingURL=main.css.map */
